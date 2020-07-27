@@ -38,8 +38,8 @@
         text-align: center;
     }
     
-    #generateCode,
-    #matchingCode {
+    #generatePin,
+    #matchingPin {
         color: white;
         text-align: center;
         letter-spacing: 10px;
@@ -110,6 +110,10 @@
         color: #fff;
     }
     
+    .removeBtn {
+        display: none;
+    }
+    
     .notify {
         color: #fff;
         text-align: center;
@@ -129,4 +133,13 @@
     .action-left {
         color: #FF3C5F;
         margin-top: 10px;
+    }
+    
+    #tryLeft {
+        width: 30px;
+        height: 20px;
+        background-color: #222436;
+        color: red;
+        border: none;
+        outline: none;
     }
