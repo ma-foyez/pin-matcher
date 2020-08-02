@@ -15,7 +15,7 @@
             <div class="col-md-6 mb-3">
                 <div class="pin-generator half-width">
                     <input id="generatePin" class="form-control" type="text" placeholder="____">
-                    <button id="generateBtn" class="generate-btn">Generate Pin</button>
+                    <button id="generateButton" class="generate-btn">Generate Pin</button>
                 </div>
             </div>
             <div class="col-md-6">
@@ -45,20 +45,22 @@
                                         <div class="button operator" id="clear">C</div>
                                 </div>
                                 <div>
-                                    <button type="submit" class="submit-btn" id="matchingBtn" disabled>Submit</button>
-                                    <p class="action-left" id=""><input type="text" name="" id="tryLeft" value="3" readonly> try left</p>
+                                    <button type="submit" class="submit-btn" id="submitButton" disabled>Submit</button>
+                                    <p class="action-left" id="tryLeftWarning"> <span id="tryLeft">3</span> try left</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="notify-section">
-                    <p class="notify" id="matchingFailed">❌ Pin Didn't Match, Please try again</p>
-                    <p class="notify" id="matchingSuccess">✅ Pin Matched... Secret door is opening for you</p>
-                </div>
             </div>
-            <!--import javaScript file-->
-            <script src="script.js"></script>
+        </div>
+        <div class="notify-section">
+            <p class="notify" id="matchingFailed">❌ Pin Didn't Match, Please try again</p>
+            <p class="notify" id="matchingSuccess">✅ Pin Matched... Secret door is opening for you</p>
+        </div>
+    </div>
+    <!--import javaScript file-->
+    <script src="script.js"></script>
 </body>
 
 </html>
