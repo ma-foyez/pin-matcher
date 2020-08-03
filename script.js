@@ -41,7 +41,6 @@ document.getElementById('submitButton').addEventListener('click', function() {
     const generateOutput = document.getElementById('generatePin').value;
     const matchOutput = document.getElementById('matchingPin').value;
     document.getElementById('tryLeft').innerText;
-
     if (generateOutput == matchOutput) {
         document.getElementById('generatePin').value = "";
         document.getElementById('matchingPin').value = "";
