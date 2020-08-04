@@ -36,7 +36,7 @@ for (let i = 0; i < operator.length; i++) {
     });
 }
 
-//Generate & matching Pin condition
+//Generate & matching Pin matching functionality
 document.getElementById('submitButton').addEventListener('click', function() {
     const generateOutput = document.getElementById('generatePin').value;
     const matchOutput = document.getElementById('matchingPin').value;
@@ -52,7 +52,7 @@ document.getElementById('submitButton').addEventListener('click', function() {
         tryLeftValue--;
         document.getElementById('matchingFailed').style.display = "block";
         document.getElementById('matchingPin').value = "";
-        //nested if-else condition to check how many times try to matching generation Pin
+        //nested if-else condition to check how many times try to matching with generation Pin
         if (tryLeftValue <= 0) {
             document.getElementById('tryLeft').innerText = tryLeftValue;
             document.getElementById('submitButton').classList.add('removeBtn');
