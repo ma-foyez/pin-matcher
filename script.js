@@ -10,7 +10,7 @@ const generateButton = document.getElementById('generateButton').addEventListene
     var value = document.getElementById('tryLeft').innerText = 3;
 });
 
-//Matching Pin handler
+//input matching pin handler
 const number = document.getElementsByClassName('number');
 for (let i = 0; i < number.length; i++) {
     const element = number[i];
@@ -36,7 +36,7 @@ for (let i = 0; i < operator.length; i++) {
     });
 }
 
-//Generate & matching Pin matching functionality
+// matching with generate pin functionality
 document.getElementById('submitButton').addEventListener('click', function() {
     const generateOutput = document.getElementById('generatePin').value;
     const matchOutput = document.getElementById('matchingPin').value;
@@ -63,4 +63,4 @@ document.getElementById('submitButton').addEventListener('click', function() {
     } else {
         document.getElementById('matchingFailed').style.display = "block";
     }
-})
+});
